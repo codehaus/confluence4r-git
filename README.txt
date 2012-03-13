@@ -1,2 +1,2 @@
 = Prerequisites =
-SVN HEAD version of SOAP4R (http://dev.ctor.org/soap4r) is required.
+No obvious prerequisites, tested on Ruby 1.8.7
