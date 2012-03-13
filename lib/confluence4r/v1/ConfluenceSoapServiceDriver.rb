@@ -17,7 +17,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getPermissionsReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "search"),
       "",
@@ -28,7 +28,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "searchReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSearchResult"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "search"),
       "",
@@ -40,7 +40,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "searchReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSearchResult"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpace"),
       "",
@@ -50,7 +50,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpaceReturn", ["Confluence4R::V1::RemoteSpace", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getComment"),
       "",
@@ -60,7 +60,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getCommentReturn", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getServerInfo"),
       "",
@@ -69,7 +69,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getServerInfoReturn", ["Confluence4R::V1::RemoteServerInfo", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteServerInfo"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getGroups"),
       "",
@@ -78,7 +78,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getGroupsReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getChildren"),
       "",
@@ -88,7 +88,38 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getChildrenReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPage"),
+      "",
+      "getPage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "getPageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPage"),
+      "",
+      "getPage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "getPageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "login"),
+      "",
+      "login",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "loginReturn", ["::SOAP::SOAPString"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::AuthenticationFailedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"AuthenticationFailedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeGroup"),
       "",
@@ -99,7 +130,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeUser"),
       "",
@@ -109,7 +140,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addGroup"),
       "",
@@ -119,28 +150,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPage"),
-      "",
-      "getPage",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPString"]],
-        ["in", "in2", ["::SOAP::SOAPString"]],
-        ["retval", "getPageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPage"),
-      "",
-      "getPage",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPLong"]],
-        ["retval", "getPageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUser"),
       "",
@@ -150,7 +160,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getUserReturn", ["Confluence4R::V1::RemoteUser", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteUser"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isPluginEnabled"),
       "",
@@ -162,27 +172,6 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         :response_style => :rpc, :response_use => :encoded,
         :faults => {} }
     ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "login"),
-      "",
-      "login",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPString"]],
-        ["retval", "loginReturn", ["::SOAP::SOAPString"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::AuthenticationFailedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"AuthenticationFailedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "installPlugin"),
-      "",
-      "installPlugin",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPString"]],
-        ["in", "in2", ["::SOAP::SOAPBase64"]],
-        ["retval", "installPluginReturn", ["::SOAP::SOAPBoolean"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getClusterInformation"),
       "",
       "getClusterInformation",
@@ -190,37 +179,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getClusterInformationReturn", ["Confluence4R::V1::RemoteClusterInformation", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteClusterInformation"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addComment"),
-      "",
-      "addComment",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]],
-        ["retval", "addCommentReturn", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getComments"),
-      "",
-      "getComments",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPLong"]],
-        ["retval", "getCommentsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteComment", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteComment"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeComment"),
-      "",
-      "removeComment",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPLong"]],
-        ["retval", "removeCommentReturn", ["::SOAP::SOAPBoolean"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getAttachments"),
       "",
@@ -230,7 +189,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getAttachmentsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteAttachment", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteAttachment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAttachment"),
       "",
@@ -242,7 +201,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAttachmentReturn", ["Confluence4R::V1::RemoteAttachment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteAttachment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAttachment"),
       "",
@@ -253,7 +212,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAttachmentReturn", ["Confluence4R::V1::RemoteAttachment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteAttachment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeAttachment"),
       "",
@@ -264,7 +223,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeAttachmentReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getContentPermissionSet"),
       "",
@@ -275,7 +234,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getContentPermissionSetReturn", ["Confluence4R::V1::RemoteContentPermissionSet", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteContentPermissionSet"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getContentPermissionSets"),
       "",
@@ -285,7 +244,37 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getContentPermissionSetsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteContentPermissionSet", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteContentPermissionSet"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getComments"),
+      "",
+      "getComments",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "getCommentsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteComment", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteComment"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addComment"),
+      "",
+      "addComment",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]],
+        ["retval", "addCommentReturn", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeComment"),
+      "",
+      "removeComment",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "removeCommentReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getDescendents"),
       "",
@@ -295,7 +284,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getDescendentsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getAncestors"),
       "",
@@ -305,7 +294,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getAncestorsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "logout"),
       "",
@@ -314,7 +303,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "logoutReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getAttachment"),
       "",
@@ -326,7 +315,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getAttachmentReturn", ["Confluence4R::V1::RemoteAttachment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteAttachment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addUser"),
       "",
@@ -336,7 +325,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["in", "in2", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getRelatedLabels"),
       "",
@@ -347,7 +336,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getRelatedLabelsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpaces"),
       "",
@@ -356,7 +345,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpacesReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSpaceSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSpaceSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpaceGroup"),
       "",
@@ -366,7 +355,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpaceGroupReturn", ["Confluence4R::V1::RemoteSpaceGroup", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpaceGroup"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::AlreadyExistsException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"AlreadyExistsException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::AlreadyExistsException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"AlreadyExistsException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpaceGroups"),
       "",
@@ -375,7 +364,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpaceGroupsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSpaceGroup", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSpaceGroup"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeSpace"),
       "",
@@ -385,20 +374,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "convertToPersonalSpace"),
-      "",
-      "convertToPersonalSpace",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPString"]],
-        ["in", "in2", ["::SOAP::SOAPString"]],
-        ["in", "in3", ["::SOAP::SOAPString"]],
-        ["in", "in4", ["::SOAP::SOAPBoolean"]],
-        ["retval", "convertToPersonalSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPages"),
       "",
@@ -408,7 +384,17 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getPagesReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPagePermissions"),
+      "",
+      "getPagePermissions",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "getPagePermissionsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePermission", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePermission"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setContentPermissions"),
       "",
@@ -420,7 +406,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "setContentPermissionsReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "moveAttachment"),
       "",
@@ -433,7 +419,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "moveAttachmentReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "editComment"),
       "",
@@ -443,7 +429,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "editCommentReturn", ["Confluence4R::V1::RemoteComment", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getTopLevelPages"),
       "",
@@ -453,7 +439,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getTopLevelPagesReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getAttachmentData"),
       "",
@@ -465,7 +451,51 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getAttachmentDataReturn", ["::SOAP::SOAPBase64"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isWatchingSpace"),
+      "",
+      "isWatchingSpace",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "isWatchingSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isWatchingPage"),
+      "",
+      "isWatchingPage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "isWatchingPageReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getTrashContents"),
+      "",
+      "getTrashContents",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPInt"]],
+        ["in", "in3", ["::SOAP::SOAPInt"]],
+        ["retval", "getTrashContentsReturn", ["Confluence4R::V1::RemoteContentSummaries", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteContentSummaries"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "emptyTrash"),
+      "",
+      "emptyTrash",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "emptyTrashReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "deactivateUser"),
       "",
@@ -475,7 +505,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "deactivateUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "reactivateUser"),
       "",
@@ -485,7 +515,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "reactivateUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addSpace"),
       "",
@@ -495,7 +525,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addSpaceReturn", ["Confluence4R::V1::RemoteSpace", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::AlreadyExistsException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"AlreadyExistsException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::AlreadyExistsException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"AlreadyExistsException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getRecentlyUsedLabels"),
       "",
@@ -505,7 +535,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getRecentlyUsedLabelsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getRecentlyUsedLabelsInSpace"),
       "",
@@ -516,7 +546,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getRecentlyUsedLabelsInSpaceReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getMostPopularLabels"),
       "",
@@ -526,7 +556,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getMostPopularLabelsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getMostPopularLabelsInSpace"),
       "",
@@ -537,17 +567,29 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getMostPopularLabelsInSpaceReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setEnableWysiwyg"),
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addUserToGroup"),
       "",
-      "setEnableWysiwyg",
+      "addUserToGroup",
       [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPBoolean"]],
-        ["retval", "setEnableWysiwygReturn", ["::SOAP::SOAPBoolean"]] ],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "addUserToGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "installPlugin"),
+      "",
+      "installPlugin",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPBase64"]],
+        ["retval", "installPluginReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPermissionsForUser"),
       "",
@@ -558,7 +600,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getPermissionsForUserReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeAllPermissionsForGroup"),
       "",
@@ -568,7 +610,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeAllPermissionsForGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeSpaceGroup"),
       "",
@@ -578,7 +620,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeSpaceGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getRelatedLabelsInSpace"),
       "",
@@ -590,7 +632,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getRelatedLabelsInSpaceReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpacesContainingContentWithLabel"),
       "",
@@ -600,7 +642,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpacesContainingContentWithLabelReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSpace", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpacesWithLabel"),
       "",
@@ -610,7 +652,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpacesWithLabelReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSpace", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getLabelsByDetail"),
       "",
@@ -623,7 +665,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getLabelsByDetailReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "movePageToTopLevel"),
       "",
@@ -634,19 +676,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "movePageToTopLevelReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "movePage"),
-      "",
-      "movePage",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPLong"]],
-        ["in", "in2", ["::SOAP::SOAPLong"]],
-        ["in", "in3", ["::SOAP::SOAPString"]],
-        ["retval", "movePageReturn", ["::SOAP::SOAPBoolean"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "renderContent"),
       "",
@@ -658,7 +688,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "renderContentReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "renderContent"),
       "",
@@ -671,7 +701,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "renderContentReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "exportSpace"),
       "",
@@ -682,7 +712,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "exportSpaceReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "exportSpace"),
       "",
@@ -694,7 +724,28 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "exportSpaceReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeUserFromGroup"),
+      "",
+      "removeUserFromGroup",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "removeUserFromGroupReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setEnableWysiwyg"),
+      "",
+      "setEnableWysiwyg",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPBoolean"]],
+        ["retval", "setEnableWysiwygReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUserGroups"),
       "",
@@ -704,7 +755,38 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getUserGroupsReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isPluginInstalled"),
+      "",
+      "isPluginInstalled",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "isPluginInstalledReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPageSummary"),
+      "",
+      "getPageSummary",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "getPageSummaryReturn", ["Confluence4R::V1::RemotePageSummary", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePageSummary"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPageSummary"),
+      "",
+      "getPageSummary",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "getPageSummaryReturn", ["Confluence4R::V1::RemotePageSummary", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePageSummary"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPageHistory"),
       "",
@@ -714,7 +796,19 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getPageHistoryReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePageHistory", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePageHistory"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "movePage"),
+      "",
+      "movePage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["in", "in2", ["::SOAP::SOAPLong"]],
+        ["in", "in3", ["::SOAP::SOAPString"]],
+        ["retval", "movePageReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removePage"),
       "",
@@ -724,7 +818,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removePageReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "storePage"),
       "",
@@ -734,7 +828,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "storePageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::VersionMismatchException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"VersionMismatchException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::VersionMismatchException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"VersionMismatchException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "updatePage"),
       "",
@@ -745,7 +839,81 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "updatePageReturn", ["Confluence4R::V1::RemotePage", "http://beans.soap.rpc.confluence.atlassian.com", "RemotePage"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::VersionMismatchException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"VersionMismatchException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::VersionMismatchException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"VersionMismatchException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "purgeFromTrash"),
+      "",
+      "purgeFromTrash",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPLong"]],
+        ["retval", "purgeFromTrashReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "watchPage"),
+      "",
+      "watchPage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "watchPageReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "watchPageForUser"),
+      "",
+      "watchPageForUser",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "watchPageForUserReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "watchSpace"),
+      "",
+      "watchSpace",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "watchSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getWatchersForPage"),
+      "",
+      "getWatchersForPage",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPLong"]],
+        ["retval", "getWatchersForPageReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteUser", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteUser"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isWatchingSpaceForType"),
+      "",
+      "isWatchingSpaceForType",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["in", "in3", ["::SOAP::SOAPString"]],
+        ["retval", "isWatchingSpaceForTypeReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getWatchersForSpace"),
+      "",
+      "getWatchersForSpace",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "getWatchersForSpaceReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteUser", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteUser"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpacesInGroup"),
       "",
@@ -755,7 +923,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpacesInGroupReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSpaceSummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSpaceSummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "storeSpace"),
       "",
@@ -765,7 +933,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "storeSpaceReturn", ["Confluence4R::V1::RemoteSpace", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addSpaceGroup"),
       "",
@@ -775,7 +943,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addSpaceGroupReturn", ["Confluence4R::V1::RemoteSpaceGroup", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpaceGroup"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::AlreadyExistsException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"AlreadyExistsException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::AlreadyExistsException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"AlreadyExistsException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addPersonalSpace"),
       "",
@@ -786,7 +954,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addPersonalSpaceReturn", ["Confluence4R::V1::RemoteSpace", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpace"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::AlreadyExistsException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"AlreadyExistsException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::AlreadyExistsException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"AlreadyExistsException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getSpaceLevelPermissions"),
       "",
@@ -795,7 +963,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getSpaceLevelPermissionsReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addPermissionToSpace"),
       "",
@@ -807,7 +975,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addPermissionToSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addGlobalPermissions"),
       "",
@@ -818,7 +986,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addGlobalPermissionsReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addGlobalPermission"),
       "",
@@ -829,7 +997,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addGlobalPermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAnonymousUsePermission"),
       "",
@@ -838,7 +1006,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAnonymousUsePermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAnonymousViewUserProfilePermission"),
       "",
@@ -847,7 +1015,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAnonymousViewUserProfilePermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeAnonymousViewUserProfilePermission"),
       "",
@@ -856,7 +1024,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeAnonymousViewUserProfilePermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeGlobalPermission"),
       "",
@@ -867,7 +1035,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeGlobalPermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addPermissionsToSpace"),
       "",
@@ -879,7 +1047,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addPermissionsToSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removePermissionFromSpace"),
       "",
@@ -891,7 +1059,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removePermissionFromSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "editUser"),
       "",
@@ -901,29 +1069,17 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "editUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addUserToGroup"),
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "isActiveUser"),
       "",
-      "addUserToGroup",
+      "isActiveUser",
       [ ["in", "in0", ["::SOAP::SOAPString"]],
         ["in", "in1", ["::SOAP::SOAPString"]],
-        ["in", "in2", ["::SOAP::SOAPString"]],
-        ["retval", "addUserToGroupReturn", ["::SOAP::SOAPBoolean"]] ],
+        ["retval", "isActiveUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
-    ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeUserFromGroup"),
-      "",
-      "removeUserFromGroup",
-      [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPString"]],
-        ["in", "in2", ["::SOAP::SOAPString"]],
-        ["retval", "removeUserFromGroupReturn", ["::SOAP::SOAPBoolean"]] ],
-      { :request_style =>  :rpc, :request_use =>  :encoded,
-        :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getActiveUsers"),
       "",
@@ -933,7 +1089,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getActiveUsersReturn", ["Confluence4R::V1::ArrayOf_xsd_string", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_xsd_string"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "changeMyPassword"),
       "",
@@ -944,7 +1100,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "changeMyPasswordReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "changeUserPassword"),
       "",
@@ -955,7 +1111,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "changeUserPasswordReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setUserInformation"),
       "",
@@ -965,7 +1121,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "setUserInformationReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUserInformation"),
       "",
@@ -975,7 +1131,76 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getUserInformationReturn", ["Confluence4R::V1::RemoteUserInformation", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteUserInformation"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setUserPreferenceBoolean"),
+      "",
+      "setUserPreferenceBoolean",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["in", "in3", ["::SOAP::SOAPBoolean"]],
+        ["retval", "setUserPreferenceBooleanReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUserPreferenceBoolean"),
+      "",
+      "getUserPreferenceBoolean",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "getUserPreferenceBooleanReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setUserPreferenceLong"),
+      "",
+      "setUserPreferenceLong",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["in", "in3", ["::SOAP::SOAPLong"]],
+        ["retval", "setUserPreferenceLongReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUserPreferenceLong"),
+      "",
+      "getUserPreferenceLong",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "getUserPreferenceLongReturn", ["::SOAP::SOAPLong"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setUserPreferenceString"),
+      "",
+      "setUserPreferenceString",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["in", "in3", ["::SOAP::SOAPString"]],
+        ["retval", "setUserPreferenceStringReturn", ["::SOAP::SOAPBoolean"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getUserPreferenceString"),
+      "",
+      "getUserPreferenceString",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPString"]],
+        ["retval", "getUserPreferenceStringReturn", ["::SOAP::SOAPString"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "hasUser"),
       "",
@@ -985,7 +1210,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "hasUserReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "hasGroup"),
       "",
@@ -995,7 +1220,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "hasGroupReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addProfilePicture"),
       "",
@@ -1008,7 +1233,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addProfilePictureReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getBlogEntryByDayAndTitle"),
       "",
@@ -1020,7 +1245,21 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getBlogEntryByDayAndTitleReturn", ["Confluence4R::V1::RemoteBlogEntry", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteBlogEntry"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
+    ],
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getBlogEntryByDateAndTitle"),
+      "",
+      "getBlogEntryByDateAndTitle",
+      [ ["in", "in0", ["::SOAP::SOAPString"]],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["in", "in2", ["::SOAP::SOAPInt"]],
+        ["in", "in3", ["::SOAP::SOAPInt"]],
+        ["in", "in4", ["::SOAP::SOAPInt"]],
+        ["in", "in5", ["::SOAP::SOAPString"]],
+        ["retval", "getBlogEntryByDateAndTitleReturn", ["Confluence4R::V1::RemoteBlogEntry", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteBlogEntry"]] ],
+      { :request_style =>  :rpc, :request_use =>  :encoded,
+        :response_style => :rpc, :response_use => :encoded,
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getBlogEntry"),
       "",
@@ -1030,7 +1269,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getBlogEntryReturn", ["Confluence4R::V1::RemoteBlogEntry", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteBlogEntry"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getBlogEntries"),
       "",
@@ -1040,7 +1279,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getBlogEntriesReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteBlogEntrySummary", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteBlogEntrySummary"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "storeBlogEntry"),
       "",
@@ -1050,7 +1289,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "storeBlogEntryReturn", ["Confluence4R::V1::RemoteBlogEntry", "http://beans.soap.rpc.confluence.atlassian.com", "RemoteBlogEntry"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::VersionMismatchException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"VersionMismatchException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::VersionMismatchException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"VersionMismatchException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "exportSite"),
       "",
@@ -1060,7 +1299,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "exportSiteReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "flushIndexQueue"),
       "",
@@ -1069,7 +1308,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "flushIndexQueueReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "clearIndexQueue"),
       "",
@@ -1078,7 +1317,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "clearIndexQueueReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getClusterNodeStatuses"),
       "",
@@ -1087,7 +1326,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getClusterNodeStatusesReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteNodeStatus", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteNodeStatus"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "importSpace"),
       "",
@@ -1097,7 +1336,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "importSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "setEnableAnonymousAccess"),
       "",
@@ -1107,7 +1346,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "setEnableAnonymousAccessReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getLabelsById"),
       "",
@@ -1117,7 +1356,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getLabelsByIdReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteLabel", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteLabel"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getLabelContentById"),
       "",
@@ -1127,7 +1366,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getLabelContentByIdReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSearchResult"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getLabelContentByName"),
       "",
@@ -1137,7 +1376,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getLabelContentByNameReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSearchResult"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getLabelContentByObject"),
       "",
@@ -1147,7 +1386,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "getLabelContentByObjectReturn", ["Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemoteSearchResult"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addLabelByName"),
       "",
@@ -1158,7 +1397,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addLabelByNameReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addLabelById"),
       "",
@@ -1169,7 +1408,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addLabelByIdReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addLabelByObject"),
       "",
@@ -1180,7 +1419,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addLabelByObjectReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addLabelByNameToSpace"),
       "",
@@ -1191,7 +1430,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addLabelByNameToSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeLabelByName"),
       "",
@@ -1202,7 +1441,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeLabelByNameReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeLabelById"),
       "",
@@ -1213,7 +1452,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeLabelByIdReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeLabelByObject"),
       "",
@@ -1224,7 +1463,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeLabelByObjectReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeLabelByNameFromSpace"),
       "",
@@ -1235,7 +1474,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeLabelByNameFromSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::InvalidSessionException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"InvalidSessionException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeAnonymousUsePermission"),
       "",
@@ -1244,7 +1483,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeAnonymousUsePermissionReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAnonymousPermissionToSpace"),
       "",
@@ -1255,7 +1494,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAnonymousPermissionToSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "addAnonymousPermissionsToSpace"),
       "",
@@ -1266,7 +1505,7 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "addAnonymousPermissionsToSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ],
     [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "removeAnonymousPermissionFromSpace"),
       "",
@@ -1277,17 +1516,17 @@ class ConfluenceSoapService < ::SOAP::RPC::Driver
         ["retval", "removeAnonymousPermissionFromSpaceReturn", ["::SOAP::SOAPBoolean"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::NotPermittedException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"NotPermittedException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}, "Confluence4R::V1::NotPermittedException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"NotPermittedException"}} }
     ],
-    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "getPagePermissions"),
+    [ XSD::QName.new(NsSoapRpcConfluenceAtlassianCom, "convertWikiToStorageFormat"),
       "",
-      "getPagePermissions",
+      "convertWikiToStorageFormat",
       [ ["in", "in0", ["::SOAP::SOAPString"]],
-        ["in", "in1", ["::SOAP::SOAPLong"]],
-        ["retval", "getPagePermissionsReturn", ["Confluence4R::V1::ArrayOf_tns2_RemotePermission", "http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", "ArrayOf_tns2_RemotePermission"]] ],
+        ["in", "in1", ["::SOAP::SOAPString"]],
+        ["retval", "convertWikiToStorageFormatReturn", ["::SOAP::SOAPString"]] ],
       { :request_style =>  :rpc, :request_use =>  :encoded,
         :response_style => :rpc, :response_use => :encoded,
-        :faults => {"Confluence4R::V1::InvalidSessionException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"InvalidSessionException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}, "Confluence4R::V1::RemoteException_"=>{:encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :name=>"RemoteException", :use=>"encoded", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1"}} }
+        :faults => {"Confluence4R::V1::RemoteException_"=>{:use=>"encoded", :ns=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :encodingstyle=>"http://schemas.xmlsoap.org/soap/encoding/", :namespace=>"http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1", :name=>"RemoteException"}} }
     ]
   ]
 

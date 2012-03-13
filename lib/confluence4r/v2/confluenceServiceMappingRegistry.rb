@@ -1,7 +1,7 @@
 require 'confluenceService.rb'
 require 'soap/mapping'
 
-module Confluence4R; module V1
+module Confluence4R; module V2
 
 module DefaultMappingRegistry
   EncodedRegistry = ::SOAP::Mapping::EncodedRegistry.new
@@ -11,174 +11,174 @@ module DefaultMappingRegistry
   NsXmlSoap = "http://xml.apache.org/xml-soap"
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_xsd_string,
+    Confluence4R::V2::ArrayOf_xsd_string,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://www.w3.org/2001/XMLSchema", "string") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteSearchResult,
+    Confluence4R::V2::ArrayOf_tns2_RemoteSearchResult,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteSearchResult") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemotePageSummary,
+    Confluence4R::V2::ArrayOf_tns2_RemotePageSummary,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemotePageSummary") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_xsd_anyType,
+    Confluence4R::V2::ArrayOf_xsd_anyType,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://www.w3.org/2001/XMLSchema", "anyType") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteAttachment,
+    Confluence4R::V2::ArrayOf_tns2_RemoteAttachment,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteAttachment") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteContentPermission,
+    Confluence4R::V2::ArrayOf_tns2_RemoteContentPermission,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteContentPermission") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteContentPermissionSet,
+    Confluence4R::V2::ArrayOf_tns2_RemoteContentPermissionSet,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteContentPermissionSet") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteComment,
+    Confluence4R::V2::ArrayOf_tns2_RemoteComment,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteComment") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteLabel,
+    Confluence4R::V2::ArrayOf_tns2_RemoteLabel,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteLabel") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteSpaceSummary,
+    Confluence4R::V2::ArrayOf_tns2_RemoteSpaceSummary,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpaceSummary") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteSpaceGroup,
+    Confluence4R::V2::ArrayOf_tns2_RemoteSpaceGroup,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpaceGroup") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemotePermission,
+    Confluence4R::V2::ArrayOf_tns2_RemotePermission,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemotePermission") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteContentSummary,
+    Confluence4R::V2::ArrayOf_tns2_RemoteContentSummary,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteContentSummary") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteSpace,
+    Confluence4R::V2::ArrayOf_tns2_RemoteSpace,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteSpace") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemotePageHistory,
+    Confluence4R::V2::ArrayOf_tns2_RemotePageHistory,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemotePageHistory") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteUser,
+    Confluence4R::V2::ArrayOf_tns2_RemoteUser,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteUser") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteBlogEntrySummary,
+    Confluence4R::V2::ArrayOf_tns2_RemoteBlogEntrySummary,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteBlogEntrySummary") }
   )
 
   EncodedRegistry.set(
-    Confluence4R::V1::ArrayOf_tns2_RemoteNodeStatus,
+    Confluence4R::V2::ArrayOf_tns2_RemoteNodeStatus,
     ::SOAP::SOAPArray,
     ::SOAP::Mapping::EncodedRegistry::TypedArrayFactory,
     { :type => XSD::QName.new("http://beans.soap.rpc.confluence.atlassian.com", "RemoteNodeStatus") }
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteException,
+    :class => Confluence4R::V2::RemoteException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::InvalidSessionException,
+    :class => Confluence4R::V2::InvalidSessionException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "InvalidSessionException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::NotPermittedException,
+    :class => Confluence4R::V2::NotPermittedException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "NotPermittedException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::VersionMismatchException,
+    :class => Confluence4R::V2::VersionMismatchException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "VersionMismatchException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::AlreadyExistsException,
+    :class => Confluence4R::V2::AlreadyExistsException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "AlreadyExistsException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::AuthenticationFailedException,
+    :class => Confluence4R::V2::AuthenticationFailedException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "AuthenticationFailedException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteSearchResult,
+    :class => Confluence4R::V2::RemoteSearchResult,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSearchResult"),
     :schema_element => [
       ["excerpt", ["SOAP::SOAPString", XSD::QName.new(nil, "excerpt")]],
@@ -190,7 +190,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteSpaceSummary,
+    :class => Confluence4R::V2::RemoteSpaceSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceSummary"),
     :schema_element => [
       ["key", ["SOAP::SOAPString", XSD::QName.new(nil, "key")]],
@@ -201,7 +201,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteSpace,
+    :class => Confluence4R::V2::RemoteSpace,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpace"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceSummary"),
     :schema_element => [
@@ -216,7 +216,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteComment,
+    :class => Confluence4R::V2::RemoteComment,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteComment"),
     :schema_element => [
       ["commentOwnerId", ["SOAP::SOAPLong", XSD::QName.new(nil, "commentOwnerId")]],
@@ -234,7 +234,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteServerInfo,
+    :class => Confluence4R::V2::RemoteServerInfo,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteServerInfo"),
     :schema_element => [
       ["baseUrl", ["SOAP::SOAPString", XSD::QName.new(nil, "baseUrl")]],
@@ -247,7 +247,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemotePageSummary,
+    :class => Confluence4R::V2::RemotePageSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageSummary"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "AbstractRemotePageSummary"),
     :schema_element => [
@@ -262,7 +262,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemotePage,
+    :class => Confluence4R::V2::RemotePage,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePage"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageSummary"),
     :schema_element => [
@@ -285,7 +285,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteUser,
+    :class => Confluence4R::V2::RemoteUser,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteUser"),
     :schema_element => [
       ["email", ["SOAP::SOAPString", XSD::QName.new(nil, "email")]],
@@ -296,12 +296,12 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteClusterInformation,
+    :class => Confluence4R::V2::RemoteClusterInformation,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteClusterInformation"),
     :schema_element => [
       ["description", ["SOAP::SOAPString", XSD::QName.new(nil, "description")]],
       ["memberCount", ["SOAP::SOAPInt", XSD::QName.new(nil, "memberCount")]],
-      ["members", ["Confluence4R::V1::ArrayOf_xsd_anyType", XSD::QName.new(nil, "members")]],
+      ["members", ["Confluence4R::V2::ArrayOf_xsd_anyType", XSD::QName.new(nil, "members")]],
       ["multicastAddress", ["SOAP::SOAPString", XSD::QName.new(nil, "multicastAddress")]],
       ["multicastPort", ["SOAP::SOAPString", XSD::QName.new(nil, "multicastPort")]],
       ["name", ["SOAP::SOAPString", XSD::QName.new(nil, "name")]],
@@ -310,7 +310,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteAttachment,
+    :class => Confluence4R::V2::RemoteAttachment,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteAttachment"),
     :schema_element => [
       ["comment", ["SOAP::SOAPString", XSD::QName.new(nil, "comment")]],
@@ -327,7 +327,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteContentPermission,
+    :class => Confluence4R::V2::RemoteContentPermission,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentPermission"),
     :schema_element => [
       ["groupName", ["SOAP::SOAPString", XSD::QName.new(nil, "groupName")]],
@@ -337,16 +337,16 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteContentPermissionSet,
+    :class => Confluence4R::V2::RemoteContentPermissionSet,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentPermissionSet"),
     :schema_element => [
-      ["contentPermissions", ["Confluence4R::V1::ArrayOf_tns2_RemoteContentPermission", XSD::QName.new(nil, "contentPermissions")]],
+      ["contentPermissions", ["Confluence4R::V2::ArrayOf_tns2_RemoteContentPermission", XSD::QName.new(nil, "contentPermissions")]],
       ["type", ["SOAP::SOAPString", XSD::QName.new(nil, "type")]]
     ]
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteLabel,
+    :class => Confluence4R::V2::RemoteLabel,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteLabel"),
     :schema_element => [
       ["id", ["SOAP::SOAPLong", XSD::QName.new(nil, "id")]],
@@ -357,7 +357,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteSpaceGroup,
+    :class => Confluence4R::V2::RemoteSpaceGroup,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceGroup"),
     :schema_element => [
       ["creatorName", ["SOAP::SOAPString", XSD::QName.new(nil, "creatorName")]],
@@ -368,7 +368,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemotePermission,
+    :class => Confluence4R::V2::RemotePermission,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePermission"),
     :schema_element => [
       ["lockType", ["SOAP::SOAPString", XSD::QName.new(nil, "lockType")]],
@@ -377,7 +377,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteContentSummary,
+    :class => Confluence4R::V2::RemoteContentSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentSummary"),
     :schema_element => [
       ["created", ["SOAP::SOAPDateTime", XSD::QName.new(nil, "created")]],
@@ -393,17 +393,17 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteContentSummaries,
+    :class => Confluence4R::V2::RemoteContentSummaries,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentSummaries"),
     :schema_element => [
-      ["content", ["Confluence4R::V1::ArrayOf_tns2_RemoteContentSummary", XSD::QName.new(nil, "content")]],
+      ["content", ["Confluence4R::V2::ArrayOf_tns2_RemoteContentSummary", XSD::QName.new(nil, "content")]],
       ["offset", ["SOAP::SOAPInt", XSD::QName.new(nil, "offset")]],
       ["totalAvailable", ["SOAP::SOAPInt", XSD::QName.new(nil, "totalAvailable")]]
     ]
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemotePageHistory,
+    :class => Confluence4R::V2::RemotePageHistory,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageHistory"),
     :schema_element => [
       ["id", ["SOAP::SOAPLong", XSD::QName.new(nil, "id")]],
@@ -414,7 +414,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemotePageUpdateOptions,
+    :class => Confluence4R::V2::RemotePageUpdateOptions,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageUpdateOptions"),
     :schema_element => [
       ["minorEdit", ["SOAP::SOAPBoolean", XSD::QName.new(nil, "minorEdit")]],
@@ -423,7 +423,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteUserInformation,
+    :class => Confluence4R::V2::RemoteUserInformation,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteUserInformation"),
     :schema_element => [
       ["content", ["SOAP::SOAPString", XSD::QName.new(nil, "content")]],
@@ -438,7 +438,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteBlogEntrySummary,
+    :class => Confluence4R::V2::RemoteBlogEntrySummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntrySummary"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "AbstractRemotePageSummary"),
     :schema_element => [
@@ -453,7 +453,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteBlogEntry,
+    :class => Confluence4R::V2::RemoteBlogEntry,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntry"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntrySummary"),
     :schema_element => [
@@ -470,18 +470,18 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::RemoteNodeStatus,
+    :class => Confluence4R::V2::RemoteNodeStatus,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteNodeStatus"),
     :schema_element => [
-      ["jVMstats", ["Confluence4R::V1::Map", XSD::QName.new(nil, "JVMstats")]],
-      ["buildStats", ["Confluence4R::V1::Map", XSD::QName.new(nil, "buildStats")]],
+      ["jVMstats", ["Confluence4R::V2::Map", XSD::QName.new(nil, "JVMstats")]],
+      ["buildStats", ["Confluence4R::V2::Map", XSD::QName.new(nil, "buildStats")]],
       ["nodeId", ["SOAP::SOAPInt", XSD::QName.new(nil, "nodeId")]],
-      ["props", ["Confluence4R::V1::Map", XSD::QName.new(nil, "props")]]
+      ["props", ["Confluence4R::V2::Map", XSD::QName.new(nil, "props")]]
     ]
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::MapItem,
+    :class => Confluence4R::V2::MapItem,
     :schema_type => XSD::QName.new(NsXmlSoap, "mapItem"),
     :schema_element => [
       ["key", [nil, XSD::QName.new(nil, "key")]],
@@ -490,7 +490,7 @@ module DefaultMappingRegistry
   )
 
   EncodedRegistry.register(
-    :class => Confluence4R::V1::Vector,
+    :class => Confluence4R::V2::Vector,
     :schema_type => XSD::QName.new(NsXmlSoap, "Vector"),
     :schema_element => [
       ["item", ["[]", XSD::QName.new(nil, "item")], [0, nil]]
@@ -498,48 +498,48 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteException,
+    :class => Confluence4R::V2::RemoteException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::InvalidSessionException,
+    :class => Confluence4R::V2::InvalidSessionException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "InvalidSessionException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::NotPermittedException,
+    :class => Confluence4R::V2::NotPermittedException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "NotPermittedException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::VersionMismatchException,
+    :class => Confluence4R::V2::VersionMismatchException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "VersionMismatchException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::AlreadyExistsException,
+    :class => Confluence4R::V2::AlreadyExistsException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "AlreadyExistsException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::AuthenticationFailedException,
+    :class => Confluence4R::V2::AuthenticationFailedException,
     :schema_type => XSD::QName.new(NsRpcConfluenceAtlassianCom, "AuthenticationFailedException"),
     :schema_basetype => XSD::QName.new(NsRpcConfluenceAtlassianCom, "RemoteException"),
     :schema_element => []
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteSearchResult,
+    :class => Confluence4R::V2::RemoteSearchResult,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSearchResult"),
     :schema_element => [
       ["excerpt", ["SOAP::SOAPString", XSD::QName.new(nil, "excerpt")]],
@@ -551,7 +551,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteSpaceSummary,
+    :class => Confluence4R::V2::RemoteSpaceSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceSummary"),
     :schema_element => [
       ["key", ["SOAP::SOAPString", XSD::QName.new(nil, "key")]],
@@ -562,7 +562,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteSpace,
+    :class => Confluence4R::V2::RemoteSpace,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpace"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceSummary"),
     :schema_element => [
@@ -577,7 +577,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteComment,
+    :class => Confluence4R::V2::RemoteComment,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteComment"),
     :schema_element => [
       ["commentOwnerId", ["SOAP::SOAPLong", XSD::QName.new(nil, "commentOwnerId")]],
@@ -595,7 +595,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteServerInfo,
+    :class => Confluence4R::V2::RemoteServerInfo,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteServerInfo"),
     :schema_element => [
       ["baseUrl", ["SOAP::SOAPString", XSD::QName.new(nil, "baseUrl")]],
@@ -608,7 +608,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemotePageSummary,
+    :class => Confluence4R::V2::RemotePageSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageSummary"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "AbstractRemotePageSummary"),
     :schema_element => [
@@ -623,7 +623,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemotePage,
+    :class => Confluence4R::V2::RemotePage,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePage"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageSummary"),
     :schema_element => [
@@ -646,7 +646,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteUser,
+    :class => Confluence4R::V2::RemoteUser,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteUser"),
     :schema_element => [
       ["email", ["SOAP::SOAPString", XSD::QName.new(nil, "email")]],
@@ -657,12 +657,12 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteClusterInformation,
+    :class => Confluence4R::V2::RemoteClusterInformation,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteClusterInformation"),
     :schema_element => [
       ["description", ["SOAP::SOAPString", XSD::QName.new(nil, "description")]],
       ["memberCount", ["SOAP::SOAPInt", XSD::QName.new(nil, "memberCount")]],
-      ["members", ["Confluence4R::V1::ArrayOf_xsd_anyType", XSD::QName.new(nil, "members")]],
+      ["members", ["Confluence4R::V2::ArrayOf_xsd_anyType", XSD::QName.new(nil, "members")]],
       ["multicastAddress", ["SOAP::SOAPString", XSD::QName.new(nil, "multicastAddress")]],
       ["multicastPort", ["SOAP::SOAPString", XSD::QName.new(nil, "multicastPort")]],
       ["name", ["SOAP::SOAPString", XSD::QName.new(nil, "name")]],
@@ -671,7 +671,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteAttachment,
+    :class => Confluence4R::V2::RemoteAttachment,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteAttachment"),
     :schema_element => [
       ["comment", ["SOAP::SOAPString", XSD::QName.new(nil, "comment")]],
@@ -688,7 +688,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteContentPermission,
+    :class => Confluence4R::V2::RemoteContentPermission,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentPermission"),
     :schema_element => [
       ["groupName", ["SOAP::SOAPString", XSD::QName.new(nil, "groupName")]],
@@ -698,16 +698,16 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteContentPermissionSet,
+    :class => Confluence4R::V2::RemoteContentPermissionSet,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentPermissionSet"),
     :schema_element => [
-      ["contentPermissions", ["Confluence4R::V1::ArrayOf_tns2_RemoteContentPermission", XSD::QName.new(nil, "contentPermissions")]],
+      ["contentPermissions", ["Confluence4R::V2::ArrayOf_tns2_RemoteContentPermission", XSD::QName.new(nil, "contentPermissions")]],
       ["type", ["SOAP::SOAPString", XSD::QName.new(nil, "type")]]
     ]
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteLabel,
+    :class => Confluence4R::V2::RemoteLabel,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteLabel"),
     :schema_element => [
       ["id", ["SOAP::SOAPLong", XSD::QName.new(nil, "id")]],
@@ -718,7 +718,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteSpaceGroup,
+    :class => Confluence4R::V2::RemoteSpaceGroup,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteSpaceGroup"),
     :schema_element => [
       ["creatorName", ["SOAP::SOAPString", XSD::QName.new(nil, "creatorName")]],
@@ -729,7 +729,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemotePermission,
+    :class => Confluence4R::V2::RemotePermission,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePermission"),
     :schema_element => [
       ["lockType", ["SOAP::SOAPString", XSD::QName.new(nil, "lockType")]],
@@ -738,7 +738,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteContentSummary,
+    :class => Confluence4R::V2::RemoteContentSummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentSummary"),
     :schema_element => [
       ["created", ["SOAP::SOAPDateTime", XSD::QName.new(nil, "created")]],
@@ -754,17 +754,17 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteContentSummaries,
+    :class => Confluence4R::V2::RemoteContentSummaries,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteContentSummaries"),
     :schema_element => [
-      ["content", ["Confluence4R::V1::ArrayOf_tns2_RemoteContentSummary", XSD::QName.new(nil, "content")]],
+      ["content", ["Confluence4R::V2::ArrayOf_tns2_RemoteContentSummary", XSD::QName.new(nil, "content")]],
       ["offset", ["SOAP::SOAPInt", XSD::QName.new(nil, "offset")]],
       ["totalAvailable", ["SOAP::SOAPInt", XSD::QName.new(nil, "totalAvailable")]]
     ]
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemotePageHistory,
+    :class => Confluence4R::V2::RemotePageHistory,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageHistory"),
     :schema_element => [
       ["id", ["SOAP::SOAPLong", XSD::QName.new(nil, "id")]],
@@ -775,7 +775,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemotePageUpdateOptions,
+    :class => Confluence4R::V2::RemotePageUpdateOptions,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemotePageUpdateOptions"),
     :schema_element => [
       ["minorEdit", ["SOAP::SOAPBoolean", XSD::QName.new(nil, "minorEdit")]],
@@ -784,7 +784,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteUserInformation,
+    :class => Confluence4R::V2::RemoteUserInformation,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteUserInformation"),
     :schema_element => [
       ["content", ["SOAP::SOAPString", XSD::QName.new(nil, "content")]],
@@ -799,7 +799,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteBlogEntrySummary,
+    :class => Confluence4R::V2::RemoteBlogEntrySummary,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntrySummary"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "AbstractRemotePageSummary"),
     :schema_element => [
@@ -814,7 +814,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteBlogEntry,
+    :class => Confluence4R::V2::RemoteBlogEntry,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntry"),
     :schema_basetype => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteBlogEntrySummary"),
     :schema_element => [
@@ -831,18 +831,18 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::RemoteNodeStatus,
+    :class => Confluence4R::V2::RemoteNodeStatus,
     :schema_type => XSD::QName.new(NsBeansSoapRpcConfluenceAtlassianCom, "RemoteNodeStatus"),
     :schema_element => [
-      ["jVMstats", ["Confluence4R::V1::Map", XSD::QName.new(nil, "JVMstats")]],
-      ["buildStats", ["Confluence4R::V1::Map", XSD::QName.new(nil, "buildStats")]],
+      ["jVMstats", ["Confluence4R::V2::Map", XSD::QName.new(nil, "JVMstats")]],
+      ["buildStats", ["Confluence4R::V2::Map", XSD::QName.new(nil, "buildStats")]],
       ["nodeId", ["SOAP::SOAPInt", XSD::QName.new(nil, "nodeId")]],
-      ["props", ["Confluence4R::V1::Map", XSD::QName.new(nil, "props")]]
+      ["props", ["Confluence4R::V2::Map", XSD::QName.new(nil, "props")]]
     ]
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::MapItem,
+    :class => Confluence4R::V2::MapItem,
     :schema_type => XSD::QName.new(NsXmlSoap, "mapItem"),
     :schema_element => [
       ["key", [nil, XSD::QName.new(nil, "key")]],
@@ -851,7 +851,7 @@ module DefaultMappingRegistry
   )
 
   LiteralRegistry.register(
-    :class => Confluence4R::V1::Vector,
+    :class => Confluence4R::V2::Vector,
     :schema_type => XSD::QName.new(NsXmlSoap, "Vector"),
     :schema_element => [
       ["item", ["[]", XSD::QName.new(nil, "item")], [0, nil]]

@@ -74,11 +74,11 @@ task :generate do
 end
 
 def versions 
- [ 1 ]
+ [ 1, 2 ]
 end
 
 def get_file(host, path)
-    puts "getting http//#{host}#{path}"
+    puts "getting http://#{host}#{path}"
     http = Net::HTTP.new(host)
     http.start { |w| w.get2(path).body }
 end

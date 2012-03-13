@@ -1,6 +1,6 @@
 require 'xsd/qname'
 
-module Confluence4R; module V1
+module Confluence4R; module V2
 
 
 # {http://rpc.confluence.atlassian.com}RemoteException
@@ -360,7 +360,7 @@ end
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteClusterInformation
 #   description - SOAP::SOAPString
 #   memberCount - SOAP::SOAPInt
-#   members - Confluence4R::V1::ArrayOf_xsd_anyType
+#   members - Confluence4R::V2::ArrayOf_xsd_anyType
 #   multicastAddress - SOAP::SOAPString
 #   multicastPort - SOAP::SOAPString
 #   name - SOAP::SOAPString
@@ -439,7 +439,7 @@ class RemoteContentPermission
 end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteContentPermissionSet
-#   contentPermissions - Confluence4R::V1::ArrayOf_tns2_RemoteContentPermission
+#   contentPermissions - Confluence4R::V2::ArrayOf_tns2_RemoteContentPermission
 #   type - SOAP::SOAPString
 class RemoteContentPermissionSet
   attr_accessor :contentPermissions
@@ -537,7 +537,7 @@ class RemoteContentSummary
 end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteContentSummaries
-#   content - Confluence4R::V1::ArrayOf_tns2_RemoteContentSummary
+#   content - Confluence4R::V2::ArrayOf_tns2_RemoteContentSummary
 #   offset - SOAP::SOAPInt
 #   totalAvailable - SOAP::SOAPInt
 class RemoteContentSummaries
@@ -616,10 +616,10 @@ class RemoteUserInformation
 end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteNodeStatus
-#   jVMstats - Confluence4R::V1::Map
-#   buildStats - Confluence4R::V1::Map
+#   jVMstats - Confluence4R::V2::Map
+#   buildStats - Confluence4R::V2::Map
 #   nodeId - SOAP::SOAPInt
-#   props - Confluence4R::V1::Map
+#   props - Confluence4R::V2::Map
 class RemoteNodeStatus
   attr_accessor :jVMstats
   attr_accessor :buildStats
@@ -651,75 +651,75 @@ end
 class Vector < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_xsd_string
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_xsd_string
 class ArrayOf_xsd_string < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteSearchResult
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSearchResult
 class ArrayOf_tns2_RemoteSearchResult < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemotePageSummary
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePageSummary
 class ArrayOf_tns2_RemotePageSummary < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_xsd_anyType
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_xsd_anyType
 class ArrayOf_xsd_anyType < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteAttachment
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteAttachment
 class ArrayOf_tns2_RemoteAttachment < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteContentPermission
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentPermission
 class ArrayOf_tns2_RemoteContentPermission < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteContentPermissionSet
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentPermissionSet
 class ArrayOf_tns2_RemoteContentPermissionSet < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteComment
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteComment
 class ArrayOf_tns2_RemoteComment < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteLabel
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteLabel
 class ArrayOf_tns2_RemoteLabel < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteSpaceSummary
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpaceSummary
 class ArrayOf_tns2_RemoteSpaceSummary < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteSpaceGroup
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpaceGroup
 class ArrayOf_tns2_RemoteSpaceGroup < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemotePermission
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePermission
 class ArrayOf_tns2_RemotePermission < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteContentSummary
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentSummary
 class ArrayOf_tns2_RemoteContentSummary < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteSpace
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpace
 class ArrayOf_tns2_RemoteSpace < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemotePageHistory
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePageHistory
 class ArrayOf_tns2_RemotePageHistory < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteUser
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteUser
 class ArrayOf_tns2_RemoteUser < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteBlogEntrySummary
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteBlogEntrySummary
 class ArrayOf_tns2_RemoteBlogEntrySummary < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v1}ArrayOf_tns2_RemoteNodeStatus
+# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteNodeStatus
 class ArrayOf_tns2_RemoteNodeStatus < ::Array
 end
 
