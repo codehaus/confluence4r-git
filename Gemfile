@@ -16,7 +16,7 @@
 
 source "http://rubygems.org"
 
-gem 'soap4r-ruby19'
+gem 'soap4r-ruby1.9'
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do

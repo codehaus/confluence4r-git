@@ -54,7 +54,7 @@ rescue Exception
   nil
 end
 
-gem 'soap4r-ruby19'
+gem 'soap4r-ruby1.9'
 
 require 'wsdl/soap/wsdl2ruby' #Must require this AFTER the gem version of soap4r is loaded!
 require 'jeweler'

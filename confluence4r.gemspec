@@ -17,9 +17,12 @@ Gem::Specification.new do |s|
     "README.txt"
   ]
   s.files = [
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.txt",
     "Rakefile",
+    "VERSION",
     "confluence4r.gemspec",
     "examples/.gitignore",
     "examples/dump-security",
@@ -43,23 +46,23 @@ Gem::Specification.new do |s|
   s.homepage = "http://confluence4r.rubyhaus.org"
   s.licenses = ["ASL v2.0"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.19"
+  s.rubygems_version = "1.8.17"
   s.summary = "Confluence SOAP Library"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<soap4r-ruby19>, [">= 0"])
+      s.add_runtime_dependency(%q<soap4r-ruby1.9>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
     else
-      s.add_dependency(%q<soap4r-ruby19>, [">= 0"])
+      s.add_dependency(%q<soap4r-ruby1.9>, [">= 0"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     end
   else
-    s.add_dependency(%q<soap4r-ruby19>, [">= 0"])
+    s.add_dependency(%q<soap4r-ruby1.9>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
   end
