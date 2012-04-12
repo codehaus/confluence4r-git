@@ -13,6 +13,35 @@
 #  See the License for the specific language governing permissions and         #
 #  limitations under the License.                                              #
 ################################################################################
+
+
+require 'rubygems'
+require 'bundler'
+begin
+  Bundler.setup(:default, :development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+require 'rake'
+
+###################################################################################################
+require 'jeweler'
+Jeweler::Tasks.new do |gem|
+  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
+  gem.name = "confluence4r"
+  gem.homepage = "http://confluence4r.rubyhaus.org"
+  gem.license = "ASL v2.0"
+  gem.summary = %Q{Confluence SOAP Library}
+  gem.description = %Q{Confluence SOAP Library}
+  gem.email = "bwalding@codehaus.org"
+  gem.authors = ["Ben Walding"]
+  # dependencies defined in Gemfile
+end
+Jeweler::RubygemsDotOrgTasks.new
+###################################################################################################
+
 require 'net/http'
 require 'fileutils'
 require 'rake/clean'
@@ -25,9 +54,10 @@ rescue Exception
   nil
 end
 
-gem 'soap4r'
+gem 'soap4r-ruby19'
 
 require 'wsdl/soap/wsdl2ruby' #Must require this AFTER the gem version of soap4r is loaded!
+require 'jeweler'
 
 logger = Logger.new(STDERR)
 logger.level = Logger::INFO
@@ -35,6 +65,9 @@ logger.level = Logger::INFO
 
 desc "gets the wsdl and generates the classes"
 task :default => [:getwsdl, :generate]
+
+
+
 
 desc "generates RDoc documentation"
 task :rdoc do

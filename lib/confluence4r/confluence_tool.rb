@@ -34,7 +34,7 @@ module Confluence4R
   
     def driver()
       if not @driver
-        @logger.info( "Connecting driver to #{@endpoint_url}" )
+        @logger.info( "Connecting v#{@version} driver to #{@endpoint_url}" )
 
         require "confluence4r/v#{@version}/confluenceService.rb"
         require "confluence4r/v#{@version}/ConfluenceSoapServiceDriver.rb"
