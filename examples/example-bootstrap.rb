@@ -1,5 +1,5 @@
 ################################################################################
-#  Copyright (c) 2004-2010, by OpenXource, LLC. All rights reserved.
+#  Copyright (c) 2004-2010, by OpenXource (Australia). All rights reserved.
 #
 #  THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE OF OPENXOURCE
 #
