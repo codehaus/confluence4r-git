@@ -49,12 +49,10 @@ require 'logger'
 
 begin
   require 'rubygems'
-  require 'rake/gempackagetask'
+  require 'rubygems/package_task'
 rescue Exception
   nil
 end
-
-gem 'soap4r-ruby1.9'
 
 require 'wsdl/soap/wsdl2ruby' #Must require this AFTER the gem version of soap4r is loaded!
 require 'jeweler'
