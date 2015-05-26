@@ -111,7 +111,7 @@ task :generate do
     worker.opt['classdef'] = 'confluenceService'
     worker.opt['driver'] = 'ConfluenceSoapService'
     worker.opt['mapping_registry'] = 'DefaultMappingRegistry'
-    worker.opt['module_path'] = "Confluence4R::V#{version}"
+    worker.opt['module_path'] = [ "Confluence4R::V#{version}" ]
     
     mkdir_p worker.basedir
     

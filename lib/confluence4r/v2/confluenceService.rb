@@ -1,177 +1,7 @@
 require 'xsd/qname'
 
-module Confluence4R; module V2
+module Confluence4R::V2
 
-
-# {http://rpc.confluence.atlassian.com}RemoteException
-class RemoteException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://rpc.confluence.atlassian.com}InvalidSessionException
-class InvalidSessionException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://rpc.confluence.atlassian.com}NotPermittedException
-class NotPermittedException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://rpc.confluence.atlassian.com}VersionMismatchException
-class VersionMismatchException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://rpc.confluence.atlassian.com}AlreadyExistsException
-class AlreadyExistsException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://rpc.confluence.atlassian.com}AuthenticationFailedException
-class AuthenticationFailedException < ::StandardError
-  def initialize
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSearchResult
-#   excerpt - SOAP::SOAPString
-#   id - SOAP::SOAPLong
-#   title - SOAP::SOAPString
-#   type - SOAP::SOAPString
-#   url - SOAP::SOAPString
-class RemoteSearchResult
-  attr_accessor :excerpt
-  attr_accessor :id
-  attr_accessor :title
-  attr_accessor :type
-  attr_accessor :url
-
-  def initialize(excerpt = nil, id = nil, title = nil, type = nil, url = nil)
-    @excerpt = excerpt
-    @id = id
-    @title = title
-    @type = type
-    @url = url
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpaceSummary
-#   key - SOAP::SOAPString
-#   name - SOAP::SOAPString
-#   type - SOAP::SOAPString
-#   url - SOAP::SOAPString
-class RemoteSpaceSummary
-  attr_accessor :key
-  attr_accessor :name
-  attr_accessor :type
-  attr_accessor :url
-
-  def initialize(key = nil, name = nil, type = nil, url = nil)
-    @key = key
-    @name = name
-    @type = type
-    @url = url
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpace
-#   key - SOAP::SOAPString
-#   name - SOAP::SOAPString
-#   type - SOAP::SOAPString
-#   url - SOAP::SOAPString
-#   description - SOAP::SOAPString
-#   homePage - SOAP::SOAPLong
-#   spaceGroup - SOAP::SOAPString
-class RemoteSpace < RemoteSpaceSummary
-  attr_accessor :key
-  attr_accessor :name
-  attr_accessor :type
-  attr_accessor :url
-  attr_accessor :description
-  attr_accessor :homePage
-  attr_accessor :spaceGroup
-
-  def initialize(key = nil, name = nil, type = nil, url = nil, description = nil, homePage = nil, spaceGroup = nil)
-    @key = key
-    @name = name
-    @type = type
-    @url = url
-    @description = description
-    @homePage = homePage
-    @spaceGroup = spaceGroup
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteComment
-#   commentOwnerId - SOAP::SOAPLong
-#   content - SOAP::SOAPString
-#   created - SOAP::SOAPDateTime
-#   creator - SOAP::SOAPString
-#   id - SOAP::SOAPLong
-#   modified - SOAP::SOAPDateTime
-#   modifier - SOAP::SOAPString
-#   pageId - SOAP::SOAPLong
-#   parentId - SOAP::SOAPLong
-#   title - SOAP::SOAPString
-#   url - SOAP::SOAPString
-class RemoteComment
-  attr_accessor :commentOwnerId
-  attr_accessor :content
-  attr_accessor :created
-  attr_accessor :creator
-  attr_accessor :id
-  attr_accessor :modified
-  attr_accessor :modifier
-  attr_accessor :pageId
-  attr_accessor :parentId
-  attr_accessor :title
-  attr_accessor :url
-
-  def initialize(commentOwnerId = nil, content = nil, created = nil, creator = nil, id = nil, modified = nil, modifier = nil, pageId = nil, parentId = nil, title = nil, url = nil)
-    @commentOwnerId = commentOwnerId
-    @content = content
-    @created = created
-    @creator = creator
-    @id = id
-    @modified = modified
-    @modifier = modifier
-    @pageId = pageId
-    @parentId = parentId
-    @title = title
-    @url = url
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteServerInfo
-#   baseUrl - SOAP::SOAPString
-#   buildId - SOAP::SOAPString
-#   developmentBuild - SOAP::SOAPBoolean
-#   majorVersion - SOAP::SOAPInt
-#   minorVersion - SOAP::SOAPInt
-#   patchLevel - SOAP::SOAPInt
-class RemoteServerInfo
-  attr_accessor :baseUrl
-  attr_accessor :buildId
-  attr_accessor :developmentBuild
-  attr_accessor :majorVersion
-  attr_accessor :minorVersion
-  attr_accessor :patchLevel
-
-  def initialize(baseUrl = nil, buildId = nil, developmentBuild = nil, majorVersion = nil, minorVersion = nil, patchLevel = nil)
-    @baseUrl = baseUrl
-    @buildId = buildId
-    @developmentBuild = developmentBuild
-    @majorVersion = majorVersion
-    @minorVersion = minorVersion
-    @patchLevel = patchLevel
-  end
-end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}AbstractRemotePageSummary
 # abstract
@@ -338,6 +168,150 @@ class RemoteBlogEntry < RemoteBlogEntrySummary
   end
 end
 
+# {http://beans.soap.rpc.confluence.atlassian.com}RemotePageUpdateOptions
+#   minorEdit - SOAP::SOAPBoolean
+#   versionComment - SOAP::SOAPString
+class RemotePageUpdateOptions
+  attr_accessor :minorEdit
+  attr_accessor :versionComment
+
+  def initialize(minorEdit = nil, versionComment = nil)
+    @minorEdit = minorEdit
+    @versionComment = versionComment
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSearchResult
+#   excerpt - SOAP::SOAPString
+#   id - SOAP::SOAPLong
+#   title - SOAP::SOAPString
+#   type - SOAP::SOAPString
+#   url - SOAP::SOAPString
+class RemoteSearchResult
+  attr_accessor :excerpt
+  attr_accessor :id
+  attr_accessor :title
+  attr_accessor :type
+  attr_accessor :url
+
+  def initialize(excerpt = nil, id = nil, title = nil, type = nil, url = nil)
+    @excerpt = excerpt
+    @id = id
+    @title = title
+    @type = type
+    @url = url
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpaceSummary
+#   key - SOAP::SOAPString
+#   name - SOAP::SOAPString
+#   type - SOAP::SOAPString
+#   url - SOAP::SOAPString
+class RemoteSpaceSummary
+  attr_accessor :key
+  attr_accessor :name
+  attr_accessor :type
+  attr_accessor :url
+
+  def initialize(key = nil, name = nil, type = nil, url = nil)
+    @key = key
+    @name = name
+    @type = type
+    @url = url
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpace
+#   key - SOAP::SOAPString
+#   name - SOAP::SOAPString
+#   type - SOAP::SOAPString
+#   url - SOAP::SOAPString
+#   description - SOAP::SOAPString
+#   homePage - SOAP::SOAPLong
+#   spaceGroup - SOAP::SOAPString
+class RemoteSpace < RemoteSpaceSummary
+  attr_accessor :key
+  attr_accessor :name
+  attr_accessor :type
+  attr_accessor :url
+  attr_accessor :description
+  attr_accessor :homePage
+  attr_accessor :spaceGroup
+
+  def initialize(key = nil, name = nil, type = nil, url = nil, description = nil, homePage = nil, spaceGroup = nil)
+    @key = key
+    @name = name
+    @type = type
+    @url = url
+    @description = description
+    @homePage = homePage
+    @spaceGroup = spaceGroup
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteComment
+#   content - SOAP::SOAPString
+#   created - SOAP::SOAPDateTime
+#   creator - SOAP::SOAPString
+#   id - SOAP::SOAPLong
+#   modified - SOAP::SOAPDateTime
+#   modifier - SOAP::SOAPString
+#   pageId - SOAP::SOAPLong
+#   parentId - SOAP::SOAPLong
+#   title - SOAP::SOAPString
+#   url - SOAP::SOAPString
+class RemoteComment
+  attr_accessor :content
+  attr_accessor :created
+  attr_accessor :creator
+  attr_accessor :id
+  attr_accessor :modified
+  attr_accessor :modifier
+  attr_accessor :pageId
+  attr_accessor :parentId
+  attr_accessor :title
+  attr_accessor :url
+
+  def initialize(content = nil, created = nil, creator = nil, id = nil, modified = nil, modifier = nil, pageId = nil, parentId = nil, title = nil, url = nil)
+    @content = content
+    @created = created
+    @creator = creator
+    @id = id
+    @modified = modified
+    @modifier = modifier
+    @pageId = pageId
+    @parentId = parentId
+    @title = title
+    @url = url
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteServerInfo
+#   baseUrl - SOAP::SOAPString
+#   buildId - SOAP::SOAPString
+#   developmentBuild - SOAP::SOAPBoolean
+#   majorVersion - SOAP::SOAPInt
+#   minorVersion - SOAP::SOAPInt
+#   patchLevel - SOAP::SOAPInt
+class RemoteServerInfo
+  attr_accessor :baseUrl
+  attr_accessor :buildId
+  attr_accessor :developmentBuild
+  attr_accessor :majorVersion
+  attr_accessor :minorVersion
+  attr_accessor :patchLevel
+
+  def initialize(baseUrl = nil, buildId = nil, developmentBuild = nil, majorVersion = nil, minorVersion = nil, patchLevel = nil)
+    @baseUrl = baseUrl
+    @buildId = buildId
+    @developmentBuild = developmentBuild
+    @majorVersion = majorVersion
+    @minorVersion = minorVersion
+    @patchLevel = patchLevel
+  end
+end
+
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteUser
 #   email - SOAP::SOAPString
 #   fullname - SOAP::SOAPString
@@ -357,31 +331,41 @@ class RemoteUser
   end
 end
 
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteClusterInformation
-#   description - SOAP::SOAPString
-#   memberCount - SOAP::SOAPInt
-#   members - Confluence4R::V2::ArrayOf_xsd_anyType
-#   multicastAddress - SOAP::SOAPString
-#   multicastPort - SOAP::SOAPString
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteLabel
+#   id - SOAP::SOAPLong
 #   name - SOAP::SOAPString
-#   running - SOAP::SOAPBoolean
-class RemoteClusterInformation
-  attr_accessor :description
-  attr_accessor :memberCount
-  attr_accessor :members
-  attr_accessor :multicastAddress
-  attr_accessor :multicastPort
+#   namespace - SOAP::SOAPString
+#   owner - SOAP::SOAPString
+class RemoteLabel
+  attr_accessor :id
   attr_accessor :name
-  attr_accessor :running
+  attr_accessor :namespace
+  attr_accessor :owner
 
-  def initialize(description = nil, memberCount = nil, members = nil, multicastAddress = nil, multicastPort = nil, name = nil, running = nil)
-    @description = description
-    @memberCount = memberCount
-    @members = members
-    @multicastAddress = multicastAddress
-    @multicastPort = multicastPort
+  def initialize(id = nil, name = nil, namespace = nil, owner = nil)
+    @id = id
     @name = name
-    @running = running
+    @namespace = namespace
+    @owner = owner
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpaceGroup
+#   creatorName - SOAP::SOAPString
+#   key - SOAP::SOAPString
+#   licenseKey - SOAP::SOAPString
+#   name - SOAP::SOAPString
+class RemoteSpaceGroup
+  attr_accessor :creatorName
+  attr_accessor :key
+  attr_accessor :licenseKey
+  attr_accessor :name
+
+  def initialize(creatorName = nil, key = nil, licenseKey = nil, name = nil)
+    @creatorName = creatorName
+    @key = key
+    @licenseKey = licenseKey
+    @name = name
   end
 end
 
@@ -439,7 +423,7 @@ class RemoteContentPermission
 end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteContentPermissionSet
-#   contentPermissions - Confluence4R::V2::ArrayOf_tns2_RemoteContentPermission
+#   contentPermissions - Confluence4R::V2::ArrayOf_tns1_RemoteContentPermission
 #   type - SOAP::SOAPString
 class RemoteContentPermissionSet
   attr_accessor :contentPermissions
@@ -448,57 +432,6 @@ class RemoteContentPermissionSet
   def initialize(contentPermissions = nil, type = nil)
     @contentPermissions = contentPermissions
     @type = type
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteLabel
-#   id - SOAP::SOAPLong
-#   name - SOAP::SOAPString
-#   namespace - SOAP::SOAPString
-#   owner - SOAP::SOAPString
-class RemoteLabel
-  attr_accessor :id
-  attr_accessor :name
-  attr_accessor :namespace
-  attr_accessor :owner
-
-  def initialize(id = nil, name = nil, namespace = nil, owner = nil)
-    @id = id
-    @name = name
-    @namespace = namespace
-    @owner = owner
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpaceGroup
-#   creatorName - SOAP::SOAPString
-#   key - SOAP::SOAPString
-#   licenseKey - SOAP::SOAPString
-#   name - SOAP::SOAPString
-class RemoteSpaceGroup
-  attr_accessor :creatorName
-  attr_accessor :key
-  attr_accessor :licenseKey
-  attr_accessor :name
-
-  def initialize(creatorName = nil, key = nil, licenseKey = nil, name = nil)
-    @creatorName = creatorName
-    @key = key
-    @licenseKey = licenseKey
-    @name = name
-  end
-end
-
-# {http://beans.soap.rpc.confluence.atlassian.com}RemotePermission
-#   lockType - SOAP::SOAPString
-#   lockedBy - SOAP::SOAPString
-class RemotePermission
-  attr_accessor :lockType
-  attr_accessor :lockedBy
-
-  def initialize(lockType = nil, lockedBy = nil)
-    @lockType = lockType
-    @lockedBy = lockedBy
   end
 end
 
@@ -537,7 +470,7 @@ class RemoteContentSummary
 end
 
 # {http://beans.soap.rpc.confluence.atlassian.com}RemoteContentSummaries
-#   content - Confluence4R::V2::ArrayOf_tns2_RemoteContentSummary
+#   content - Confluence4R::V2::ArrayOf_tns1_RemoteContentSummary
 #   offset - SOAP::SOAPInt
 #   totalAvailable - SOAP::SOAPInt
 class RemoteContentSummaries
@@ -549,6 +482,69 @@ class RemoteContentSummaries
     @content = content
     @offset = offset
     @totalAvailable = totalAvailable
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteConfluenceUser
+#   email - SOAP::SOAPString
+#   fullname - SOAP::SOAPString
+#   key - SOAP::SOAPString
+#   name - SOAP::SOAPString
+#   url - SOAP::SOAPString
+class RemoteConfluenceUser
+  attr_accessor :email
+  attr_accessor :fullname
+  attr_accessor :key
+  attr_accessor :name
+  attr_accessor :url
+
+  def initialize(email = nil, fullname = nil, key = nil, name = nil, url = nil)
+    @email = email
+    @fullname = fullname
+    @key = key
+    @name = name
+    @url = url
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteClusterInformation
+#   description - SOAP::SOAPString
+#   memberCount - SOAP::SOAPInt
+#   members - Confluence4R::V2::ArrayOf_xsd_anyType
+#   multicastAddress - SOAP::SOAPString
+#   multicastPort - SOAP::SOAPString
+#   name - SOAP::SOAPString
+#   running - SOAP::SOAPBoolean
+class RemoteClusterInformation
+  attr_accessor :description
+  attr_accessor :memberCount
+  attr_accessor :members
+  attr_accessor :multicastAddress
+  attr_accessor :multicastPort
+  attr_accessor :name
+  attr_accessor :running
+
+  def initialize(description = nil, memberCount = nil, members = nil, multicastAddress = nil, multicastPort = nil, name = nil, running = nil)
+    @description = description
+    @memberCount = memberCount
+    @members = members
+    @multicastAddress = multicastAddress
+    @multicastPort = multicastPort
+    @name = name
+    @running = running
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemotePermission
+#   lockType - SOAP::SOAPString
+#   lockedBy - SOAP::SOAPString
+class RemotePermission
+  attr_accessor :lockType
+  attr_accessor :lockedBy
+
+  def initialize(lockType = nil, lockedBy = nil)
+    @lockType = lockType
+    @lockedBy = lockedBy
   end
 end
 
@@ -571,16 +567,35 @@ class RemotePageHistory
   end
 end
 
-# {http://beans.soap.rpc.confluence.atlassian.com}RemotePageUpdateOptions
-#   minorEdit - SOAP::SOAPBoolean
-#   versionComment - SOAP::SOAPString
-class RemotePageUpdateOptions
-  attr_accessor :minorEdit
-  attr_accessor :versionComment
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteNodeStatus
+#   jVMstats - Confluence4R::V2::Map
+#   buildStats - Confluence4R::V2::Map
+#   nodeId - SOAP::SOAPInt
+#   props - Confluence4R::V2::Map
+class RemoteNodeStatus
+  attr_accessor :jVMstats
+  attr_accessor :buildStats
+  attr_accessor :nodeId
+  attr_accessor :props
 
-  def initialize(minorEdit = nil, versionComment = nil)
-    @minorEdit = minorEdit
-    @versionComment = versionComment
+  def initialize(jVMstats = nil, buildStats = nil, nodeId = nil, props = nil)
+    @jVMstats = jVMstats
+    @buildStats = buildStats
+    @nodeId = nodeId
+    @props = props
+  end
+end
+
+# {http://beans.soap.rpc.confluence.atlassian.com}RemoteSpacePermissionSet
+#   spacePermissions - Confluence4R::V2::ArrayOf_tns1_RemoteContentPermission
+#   type - SOAP::SOAPString
+class RemoteSpacePermissionSet
+  attr_accessor :spacePermissions
+  attr_accessor :type
+
+  def initialize(spacePermissions = nil, type = nil)
+    @spacePermissions = spacePermissions
+    @type = type
   end
 end
 
@@ -615,22 +630,39 @@ class RemoteUserInformation
   end
 end
 
-# {http://beans.soap.rpc.confluence.atlassian.com}RemoteNodeStatus
-#   jVMstats - Confluence4R::V2::Map
-#   buildStats - Confluence4R::V2::Map
-#   nodeId - SOAP::SOAPInt
-#   props - Confluence4R::V2::Map
-class RemoteNodeStatus
-  attr_accessor :jVMstats
-  attr_accessor :buildStats
-  attr_accessor :nodeId
-  attr_accessor :props
+# {http://rpc.confluence.atlassian.com}RemoteException
+class RemoteException < ::StandardError
+  def initialize
+  end
+end
 
-  def initialize(jVMstats = nil, buildStats = nil, nodeId = nil, props = nil)
-    @jVMstats = jVMstats
-    @buildStats = buildStats
-    @nodeId = nodeId
-    @props = props
+# {http://rpc.confluence.atlassian.com}InvalidSessionException
+class InvalidSessionException < ::StandardError
+  def initialize
+  end
+end
+
+# {http://rpc.confluence.atlassian.com}VersionMismatchException
+class VersionMismatchException < ::StandardError
+  def initialize
+  end
+end
+
+# {http://rpc.confluence.atlassian.com}AuthenticationFailedException
+class AuthenticationFailedException < ::StandardError
+  def initialize
+  end
+end
+
+# {http://rpc.confluence.atlassian.com}AlreadyExistsException
+class AlreadyExistsException < ::StandardError
+  def initialize
+  end
+end
+
+# {http://rpc.confluence.atlassian.com}NotPermittedException
+class NotPermittedException < ::StandardError
+  def initialize
   end
 end
 
@@ -651,77 +683,81 @@ end
 class Vector < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_xsd_string
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemotePageSummary
+class ArrayOf_tns1_RemotePageSummary < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_xsd_string
 class ArrayOf_xsd_string < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSearchResult
-class ArrayOf_tns2_RemoteSearchResult < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteSearchResult
+class ArrayOf_tns1_RemoteSearchResult < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePageSummary
-class ArrayOf_tns2_RemotePageSummary < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteLabel
+class ArrayOf_tns1_RemoteLabel < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_xsd_anyType
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteContentPermission
+class ArrayOf_tns1_RemoteContentPermission < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteContentPermissionSet
+class ArrayOf_tns1_RemoteContentPermissionSet < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteComment
+class ArrayOf_tns1_RemoteComment < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteContentSummary
+class ArrayOf_tns1_RemoteContentSummary < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteSpaceSummary
+class ArrayOf_tns1_RemoteSpaceSummary < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteAttachment
+class ArrayOf_tns1_RemoteAttachment < ::Array
+end
+
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_xsd_anyType
 class ArrayOf_xsd_anyType < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteAttachment
-class ArrayOf_tns2_RemoteAttachment < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteSpace
+class ArrayOf_tns1_RemoteSpace < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentPermission
-class ArrayOf_tns2_RemoteContentPermission < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteSpaceGroup
+class ArrayOf_tns1_RemoteSpaceGroup < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentPermissionSet
-class ArrayOf_tns2_RemoteContentPermissionSet < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemotePermission
+class ArrayOf_tns1_RemotePermission < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteComment
-class ArrayOf_tns2_RemoteComment < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemotePageHistory
+class ArrayOf_tns1_RemotePageHistory < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteLabel
-class ArrayOf_tns2_RemoteLabel < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteNodeStatus
+class ArrayOf_tns1_RemoteNodeStatus < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpaceSummary
-class ArrayOf_tns2_RemoteSpaceSummary < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteUser
+class ArrayOf_tns1_RemoteUser < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpaceGroup
-class ArrayOf_tns2_RemoteSpaceGroup < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteBlogEntrySummary
+class ArrayOf_tns1_RemoteBlogEntrySummary < ::Array
 end
 
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePermission
-class ArrayOf_tns2_RemotePermission < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteContentSummary
-class ArrayOf_tns2_RemoteContentSummary < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteSpace
-class ArrayOf_tns2_RemoteSpace < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemotePageHistory
-class ArrayOf_tns2_RemotePageHistory < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteUser
-class ArrayOf_tns2_RemoteUser < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteBlogEntrySummary
-class ArrayOf_tns2_RemoteBlogEntrySummary < ::Array
-end
-
-# {http://docs.codehaus.org/rpc/soap-axis/confluenceservice-v2}ArrayOf_tns2_RemoteNodeStatus
-class ArrayOf_tns2_RemoteNodeStatus < ::Array
+# {http://docs.codehaus.org/plugins/servlet/soap-axis1/confluenceservice-v2}ArrayOf_tns1_RemoteSpacePermissionSet
+class ArrayOf_tns1_RemoteSpacePermissionSet < ::Array
 end
 
 
-end; end
+end
